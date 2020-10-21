@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Doubt CLASSES</title>
+		<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color:skyblue;
+			animation:mukul 10s infinite;
+		}
+		#name{
+			border:2px solid black;
+			font-size:50px;
+			font-family:Lato;
+			border-radius:3px;
+			background-color:blue;
+			color:white;
+			font-weight:bold;
+			transition:0.5s ease-in;
+			letter-spacing:2px;
+			width:1000px;
+		}
+		#name:hover{
+			background-color:white;
+			color:blue;
+		}
+		#extra{
+			border:1px solid blue;
+			font-size:30px;
+			font-family:Lato;
+			border-radius:4px;
+			background-color:black;
+			color:white;
+			font-weight:bold;
+			transition:0.3s ease-in;
+			letter-spacing:1.2px;
+		}
+		#extra:hover{
+			background-color:white;
+			color:black;
+		}
+		table{
+			background-color:#8BC34A;
+			border:2px solid black;
+			border-radius:4px;
+		}
+		td{
+			border-bottom:1px solid black;
+			font-size:30px;
+			color:white;
+			transition:1s ease-in;
+			height:50px;
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+		td:hover{
+			background-color:white;
+			color:blue;
+			cursor:pointer;
+		}
+		td:hover a{
+			color:blue;
+		}
+		#zoom:hover{
+			color:blue;
+			background-color:white;
+		}
+		#zoom{
+			background-color:blue;
+		}
+		#main{
+			width:160px;
+			height:70px;
+			background-color:pink;
+			transition: 0.5s ease-out;
+			font-weight:bold;
+			border:2px solid black;
+			position:relative;
+			margin-top:10px;
+			border-radius:5px;
+			margin-left:10%;
+			margin-right:10%;
+			cursor:pointer;
+		}
+		#visit{
+			display:none;
+		}
+		#main:hover{
+			transform:scale(1.05);
+			background-color:#df00ff;
+		}
+		#main:hover #visit{
+			display:block;
+		}
+		#main:hover #tname{
+			display:none;
+		}
+		#tname,#visit{
+			text-align:center;
+			margin:2px;
+			padding:2px;
+		}
+		#t-name{
+			text-align:center;
+			margin:2px;
+			padding:2px;
+			font-family:lato;
+			font-weight:bold;
+			letter-spacing:1px;
+			color:black;
+			font-size:30px;
+		}
+		pre{	
+			text-align:center;
+			font-family:lato;
+			font-weight:bold;
+			letter-spacing:1px;
+			margin-top:20px;
+			
+		}
+		@keyframes mukul{
+			0%{
+				background-color:skyblue;
+			}
+			45%{
+				background-color:skyblue;
+			}
+			50%{
+				background-color:pink;
+			}
+			70%{
+				background-color:pink;
+			}
+			75%{
+				background-color:#FFB300;
+			}
+			100%{
+				background-color:#FFB300;
+			}
+		}
+		#teachers{
+			display:flex;
+		}
+		</style>
+		<style media="(max-width: 800px)">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color:skyblue;
+			animation:mukul 10s infinite;
+		}
+		#name{
+			border:2px solid black;
+			font-size:50px;
+			font-family:Lato;
+			border-radius:3px;
+			background-color:blue;
+			color:white;
+			font-weight:bold;
+			transition:0.5s ease-in;
+			letter-spacing:2px;
+			width:1000px;
+		}
+		#name:hover{
+			background-color:white;
+			color:blue;
+		}
+		#extra{
+			border:1px solid blue;
+			font-size:30px;
+			font-family:Lato;
+			border-radius:4px;
+			background-color:black;
+			color:white;
+			font-weight:bold;
+			transition:0.3s ease-in;
+			letter-spacing:1.2px;
+		}
+		#extra:hover{
+			background-color:white;
+			color:black;
+		}
+		table{
+			background-color:#8BC34A;
+			border:2px solid black;
+			border-radius:4px;
+		}
+		td{
+			border-bottom:1px solid black;
+			font-size:30px;
+			color:white;
+			transition:1s ease-in;
+			height:50px;
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+		td:hover{
+			background-color:white;
+			color:blue;
+			cursor:pointer;
+		}
+		td:hover a{
+			color:blue;
+		}
+		#zoom:hover{
+			color:blue;
+			background-color:white;
+		}
+		#zoom{
+			background-color:blue;
+		}
+		#main{
+			width:160px;
+			height:70px;
+			background-color:pink;
+			transition: 0.5s ease-out;
+			font-weight:bold;
+			border:2px solid black;
+			position:relative;
+			margin-top:10px;
+			border-radius:5px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		#visit{
+			display:none;
+		}
+		#main:hover{
+			transform:scale(1.05);
+			background-color:#df00ff;
+		}
+		#main:hover #visit{
+			display:block;
+		}
+		#main:hover #tname{
+			display:none;
+		}
+		#tname,#visit{
+			text-align:center;
+			margin:2px;
+			padding:2px;
+		}
+		#t-name{
+			text-align:center;
+			margin:2px;
+			padding:2px;
+			font-family:lato;
+			font-weight:bold;
+			letter-spacing:1px;
+			color:black;
+			font-size:30px;
+		}
+		pre{	
+			text-align:center;
+			font-family:lato;
+			font-weight:bold;
+			letter-spacing:1px;
+			margin-top:20px;
+			
+		}
+		@keyframes mukul{
+			0%{
+				background-color:skyblue;
+			}
+			45%{
+				background-color:skyblue;
+			}
+			50%{
+				background-color:pink;
+			}
+			70%{
+				background-color:pink;
+			}
+			75%{
+				background-color:#FFB300;
+			}
+			100%{
+				background-color:#FFB300;
+			}
+		}
+		#teachers{
+			display:list-item;
+		}
+		</style>
+	</head>
+	<body>
+		<center><br><br><br><br>
+			<span id="name">IITIANS CLASSES</span><br><br>
+			<span id="extra">REGULAR DOUBT MEETINGS</span><br><br><br><br><br><br>
+			
+			<table>
+				<tr id="zoom"><td style="font-weight:bold;text-align:center;">ZOOM</td></tr>
+				<tr><td>Meeting Id: 421-266-6868</td></tr>
+				<tr><td>Password: 3hJiU3</td></tr>
+				<tr><td style="text-align:center;"><a href="https://us04web.zoom.us/j/4212666868?pwd=YVo4T1liTUErd3hBSUlVaFZLcVpOUT09" target="_blanck">Join with Link</a></td></tr>
+			</table>
+		    </center>
+			<div id="teachers">
+				<div id="main">
+					<span id="tname"><pre id="t-name">Amol Sir</pre></span>
+					<span id="visit"><a href="https://wa.me/917869132382?text=Hello" target="_blanck"><pre>Click For Whatsapp</pre></a></span>
+				</div>
+				
+				<div id="main">
+					<span id="tname"><pre id="t-name">Vikas Sir</pre></span>
+					<span id="visit"><a href="https://wa.me/918299457800?text=Hello" target="_blanck"><pre>Click For Whatsapp</pre></a></span>
+				</div>
+				
+				<div id="main">
+					<span id="tname"><pre id="t-name">Vahid Sir</pre></span>
+					<span id="visit"><a href="https://wa.me/919690999040?text=Hello" target="_blanck"><pre>Click For Whatsapp</pre></a></span>
+				</div>
+			</div>
+
+		
+		
+		
+		
+</html> 
